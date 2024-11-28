@@ -138,6 +138,33 @@ function saveLocation() {
 
 // Automatically update location when the page loads
 updateLocation();
+function validateForm() {
+    // Example validation logic (replace with your actual logic)
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm_password').value;
+
+    if (password !== confirmPassword) {
+        document.getElementById('confirmPasswordError').innerText = "Passwords do not match.";
+        return false;
+    }
+
+    // Simulate successful registration
+    showSuccessPopup();
+    return false; // Prevent form submission for demo purposes
+}
+
+function showSuccessPopup() {
+    const popup = document.getElementById('successPopup');
+    popup.classList.remove('hidden');
+    popup.style.display = 'block';
+
+    // Hide the popup after 3 seconds
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 3000);
+}
+
 
 // Add an event listener to the save button
 saveButton.addEventListener('click', saveLocation);
