@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register or Login - Pawscan</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-br from-gray-900 to-gray-700 font-sans">
+    <!-- Wrapper -->
+    <div class="min-h-screen flex items-center justify-center py-10 px-4">
+        <!-- Card Container with Restored Larger Width -->
+        <div
+            class="bg-gray-800 shadow-2xl rounded-lg overflow-hidden w-full max-w-4xl md:flex transform hover:scale-105 transition duration-300">
+            <!-- Image Section -->
+            <div class="hidden md:block md:w-1/2 bg-cover bg-center"
+                style="background-image: url('Assests/brooke-cagle-Ntm4C2lCWxQ-unsplash.jpg');"></div>
+
+            <!-- Form Section -->
+            <div class="w-full md:w-1/2 p-8 space-y-6">
+                <h2 class="text-3xl font-bold text-yellow-400 mb-2">Welcome to Pawscan</h2>
+                <p class="text-gray-300">Register your pet or log in to manage their details and stay connected with
+                    your furry friends.</p>
+
+                <!-- Tabs -->
+                <div class="flex mb-6 space-x-2">
+                    <button id="registerTab" onclick="showRegister()"
+                        class="w-1/2 py-2 font-semibold text-lg text-white bg-gradient-to-r from-orange-500 to-yellow-500 rounded-lg shadow hover:shadow-lg transition duration-300">Register</button>
+                    <button id="loginTab" onclick="showLogin()"
+                        class="w-1/2 py-2 font-semibold text-lg text-gray-300 bg-gray-600 rounded-lg shadow hover:shadow-lg transition duration-300">Login</button>
+                </div>
+
+                <!-- Register Form -->
+                <form id="registerForm" class="space-y-4">
+                    <div class="flex space-x-4">
+                        <input type="text" placeholder="First Name"
+                            class="w-1/2 p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                        <input type="text" placeholder="Last Name"
+                            class="w-1/2 p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    </div>
+                    <input type="text" placeholder="NFC Code"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <input type="text" placeholder="Pet's Name"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <input type="email" placeholder="Email Address"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <input type="password" placeholder="Password"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <!-- NFC Code Input -->
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold py-3 rounded-md shadow-md hover:shadow-lg transition duration-300">Register</button>
+                </form>
+
+                <!-- Login Form (hidden by default) -->
+                <form id="loginForm" class="space-y-4 hidden">
+                    <input type="text" placeholder="NFC Code"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <input type="number';[]" placeholder="Phone No."
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+
+                    <input type="password" placeholder="Password"
+                        class="w-full p-3 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                    <button type="submit"
+                        class="w-full bg-gradient-to-r from-orange-500 to-yellow-500 text-white font-bold py-3 rounded-md shadow-md hover:shadow-lg transition duration-300">Login</button>
+                </form>
+
+                <!-- Forgot Password and Footer Links -->
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-sm text-gray-400 hover:text-yellow-400">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript to toggle forms -->
+    <script>
+        function showRegister() {
+            document.getElementById("registerForm").classList.remove("hidden");
+            document.getElementById("loginForm").classList.add("hidden");
+            document.getElementById("registerTab").classList.add("bg-gradient-to-r", "from-orange-500", "to-yellow-500", "text-white");
+            document.getElementById("loginTab").classList.remove("bg-gradient-to-r", "from-orange-500", "to-yellow-500", "text-white");
+            document.getElementById("loginTab").classList.add("text-gray-300", "bg-gray-600");
+        }
+
+        function showLogin() {
+            document.getElementById("loginForm").classList.remove("hidden");
+            document.getElementById("registerForm").classList.add("hidden");
+            document.getElementById("loginTab").classList.add("bg-gradient-to-r", "from-orange-500", "to-yellow-500", "text-white");
+            document.getElementById("registerTab").classList.remove("bg-gradient-to-r", "from-orange-500", "to-yellow-500", "text-white");
+            document.getElementById("registerTab").classList.add("text-gray-300", "bg-gray-600");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawscan - Unified Pet ID Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .w-screen {
+            width: 100vw;
+            margin-left: calc(50% - 50vw);
+            margin-right: calc(50% - 50vw);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm py-3 transition duration-300 ease-in-out">
+        <div class="container">
+            <a class="navbar-brand font-bold text-xl text-orange-500" href="#">Pawscan 🐾</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-600 hover:text-orange-500 font-semibold" href="login.html">Register
+                            Microchip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-600 hover:text-orange-500 font-semibold" href="#">Find Pets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-gray-600 hover:text-orange-500 font-semibold" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-primary rounded-full px-4 py-2 font-semibold" href="login.html">Login
+                            / Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <br><br>
+    <section class="text-center py-20 bg-gradient-to-r from-yellow-50 to-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">Smart Solutions for Savvy <span
+                    class="text-orange-500">Pet Owners</span></h1>
+            <p class="text-lg text-gray-600 mb-8">Join our Beta & Unlock Benefits for your Pet. For Pet Parents | Animal
+                Welfare Orgs | Vets | Pet Experts</p>
+            <a href="login.html"
+                class="btn btn-warning font-bold text-black px-8 py-3 rounded-full shadow-md hover:bg-orange-400 transition duration-300">Create
+                Pet's Profile</a>
+            <div class="mt-10">
+                <img src="Assests/copy pexels-chevanon-1108099.jpg" alt="Happy Dog" class="rounded-lg shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section with Dog Icons -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="p-6">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-800">Why Choose Pawscan?</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">A platform designed to make pet parenting <span
+                            class="text-orange-500 font-semibold">smart, secure & rewarding</span>.</p>
+                    <!-- <div class="flex items-start mb-6">
+                        <img src="https://via.placeholder.com/50" alt="Dog icon" class="mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Pet Care & Safety</h3>
+                            <p class="text-gray-600">Simplify daily routines while ensuring your pet's security with
+                                microchipping.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <img src="https://via.placeholder.com/50" alt="Dog icon" class="mr-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Lifetime Data Safety</h3>
+                            <p class="text-gray-600">Pet microchipping opens doors to safe journeys and exciting
+                                adventures with your pet.</p>
+                        </div>
+                    </div> -->
+
+
+
+                    <div class="flex items-start mb-6">
+                        <i class="fas fa-dog text-2xl text-orange-500 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Pet Care & Safety</h3>
+                            <p class="text-gray-600">Simplify daily routines while ensuring your pet's security with
+                                microchipping.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-orange-500 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800">Lifetime Data Safety</h3>
+                            <p class="text-gray-600">Pet microchipping opens doors to safe journeys and exciting
+                                adventures with your pet.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="p-6">
+                    <img src="Assests/brooke-cagle-Ntm4C2lCWxQ-unsplash.jpg" width="80%" alt="Pet Care Image"
+                        class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Dog Photos -->
+
+    <section class="py-20 bg-white text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Happy Pet Owners</h2>
+        <p class="text-lg text-gray-600 mb-8">See what pet parents have to say about Pawscan!</p>
+
+        <!-- Full-width Horizontal Scrolling Container -->
+        <div class="overflow-x-auto snap-x snap-mandatory flex space-x-6 pb-6 w-screen px-6 hide-scrollbar">
+            <!-- Testimonial 1 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-pink-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Varsha Manohar</h3>
+                <p class="text-gray-500 mb-2">Dog Mom, Bangalore</p>
+                <p class="text-gray-700">"Amazing! Just Amazing. These guys have created something awesome and it's
+                    absolutely free. Love my Dog's profile. We also got Cece microchipped with Superr Chip."</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-orange-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Gouri & Arun</h3>
+                <p class="text-gray-500 mb-2">Dog parents, Pune</p>
+                <p class="text-gray-700">"Love the idea. It's a joy to connect with other pet parents in the community.
+                    Thank you for making pet ownership easier and more enjoyable!"</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-yellow-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Anjali Reddy</h3>
+                <p class="text-gray-500 mb-2">Dog Mom, Hyderabad</p>
+                <p class="text-gray-700">"Pawscan has been a game-changer for me and my pet. I love how convenient and
+                    secure it is for pet tracking and care."</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-blue-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Rohit Singh</h3>
+                <p class="text-gray-500 mb-2">Dog Dad, Mumbai</p>
+                <p class="text-gray-700">"The convenience and peace of mind Pawscan provides is priceless. I can’t
+                    imagine life without it now!"</p>
+            </div>
+            <div class="flex-shrink-0 w-80 p-6 bg-pink-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Varsha Manohar</h3>
+                <p class="text-gray-500 mb-2">Dog Mom, Bangalore</p>
+                <p class="text-gray-700">"Amazing! Just Amazing. These guys have created something awesome and it's
+                    absolutely free. Love my Dog's profile. We also got Cece microchipped with Superr Chip."</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-orange-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Gouri & Arun</h3>
+                <p class="text-gray-500 mb-2">Dog parents, Pune</p>
+                <p class="text-gray-700">"Love the idea. It's a joy to connect with other pet parents in the community.
+                    Thank you for making pet ownership easier and more enjoyable!"</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-yellow-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/women/58.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Anjali Reddy</h3>
+                <p class="text-gray-500 mb-2">Dog Mom, Hyderabad</p>
+                <p class="text-gray-700">"Pawscan has been a game-changer for me and my pet. I love how convenient and
+                    secure it is for pet tracking and care."</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="flex-shrink-0 w-80 p-6 bg-blue-100 rounded-lg shadow-md snap-center">
+                <img src="https://randomuser.me/api/portraits/men/50.jpg" alt="Dog photo"
+                    class="w-20 h-20 rounded-full mx-auto mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">Rohit Singh</h3>
+                <p class="text-gray-500 mb-2">Dog Dad, Mumbai</p>
+                <p class="text-gray-700">"The convenience and peace of mind Pawscan provides is priceless. I can’t
+                    imagine life without it now!"</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-orange-50 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Ready to Start?</h2>
+            <p class="text-lg text-gray-600 mb-8">Join Pawscan and ensure the best care and safety for your pets.</p>
+            <a href="#"
+                class="btn btn-lg btn-warning px-8 py-3 rounded-full font-bold text-black shadow-lg hover:bg-orange-400 transition duration-300">Join
+                Pawscan</a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-20 bg-gray-100 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p class="text-lg text-gray-600 mb-8">Have questions? Reach out to us, and we’ll be happy to assist!</p>
+
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 border rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 border rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-2 border rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="btn btn-warning font-bold text-black px-8 py-3 rounded-full shadow-md hover:bg-orange-400 transition duration-300">Send
+                        Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Pawscan. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
